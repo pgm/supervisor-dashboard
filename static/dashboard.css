@@ -1,0 +1,169 @@
+body, td, input, select, textarea, a {
+  font: 12px/1.5em arial, helvetica, verdana, sans-serif;
+  color: #333;
+}
+
+html, body, form, fieldset, h1, h2, h3, h4, h5, h6, 
+p, pre, blockquote, ul, ol, dl, address {
+  margin: 0;
+  padding: 0;
+}
+
+img, table {
+  border-width: 0;
+}
+
+table {
+	margin-bottom: 20px;
+}
+
+h1 {
+  font: 18px/1.8em arial, helvetica, verdana, sans-serif;
+  color: #333;
+}
+
+h1 a {
+  font: 18px/1.8em arial, helvetica, verdana, sans-serif;
+  color: #333;
+}
+
+
+body {
+  background-color: #FFFFF3;
+  color: #333;
+}
+a:link, 
+a:visited {
+  color: #333;
+}
+a:hover {
+  color: #000;
+}
+
+/* =FLOATS
+----------------------------------------------- */
+.left {
+  float: left;
+}
+.right {
+	text-align: right;
+	float: right;
+}
+/* clear float */
+.clr:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+.clr {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clr {height: 1%;}
+.clr {display: block;}
+/* End hide from IE-mac */
+
+/* =LAYOUT
+----------------------------------------------- */
+html, body {
+  height: 100%;
+}
+
+#wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  width: 782px;
+  margin: 0 auto -31px;
+}
+
+#footer, 
+.push {
+  height: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #919191;
+}
+th {
+  background-color: #919191;
+  color: #fff;
+  text-align: left;
+}
+th.state {
+  text-align: center;
+  width: 44px;
+}
+th.desc {
+  width: 200px;
+}
+th.name {
+  width: 200px;
+}
+th.action {
+}
+td, th {
+  padding: 4px 8px;
+  border-bottom: 1px solid #fff;
+}
+tr td {
+  background-color: #FBFBFB;
+}
+tr.shade td {
+  background-color: #F0F0F0;
+}
+.action ul {
+  list-style: none;
+  display: inline;
+}
+.action li {
+  margin-right: 10px;
+  display: inline;
+}
+
+/* status message */
+.status span {
+  display: block;
+  width: 60px;
+  height: 16px;
+  border: 1px solid #fff;
+  text-align: center;
+  font-size: 95%;
+  line-height: 1.4em;
+}
+
+.state-running {
+  background-color: lightgreen;
+  border-radius: 5px;
+  display: inline;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}
+
+.state-stopped {
+  background-color: #FFCC99;
+  border-radius: 5px;
+  display: inline;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}
+
+.state-unreachable, .state-fatal {
+  background-color: #FF0000;
+  border-radius: 5px;
+  color: white;
+  display: inline;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}
